@@ -1,3 +1,4 @@
+"use strict";
 // const inputNum1 = document.querySelector("#input1") as HTMLInputElement;
 // const inputNum2 = document.querySelector("#input2") as HTMLInputElement;
 // const submitBtn1 = document.querySelector("#submitBtn");
@@ -118,15 +119,13 @@
 // }
 // const vehicle =  new Vehicle(modelType);
 // console.log(vehicle);
-// // 2.Basic class 
-// class Vehicle {
-//     type: string;
-//     color: string;
-//     constructor(t: string, c: string) {
-//         this.type = t;
-//         this.color = c;
-//     }
-// }
-// //Instantiate an object of the class Vehicle
-// const vehicle =  new Vehicle("Car", "Red");
-// console.log(vehicle);
+// 2.Basic class 
+class Vehicle {
+    constructor(t, c) {
+        this.type = t;
+        this.color = c;
+    }
+}
+//Instantiate an object of the class Vehicle
+const vehicle = new Vehicle("Car", "Red");
+console.log(vehicle);
